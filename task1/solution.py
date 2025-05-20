@@ -9,7 +9,7 @@ def strict(func):
             expected_type = param.annotation
             if not isinstance(val, expected_type):
                 raise TypeError(
-                    f"Argument '{name}' must be {expected_type.name}, got {type(val).name}"
+                    f"Argument '{name}' must be {expected_type.__name__}, got {type(val).__name__}"
                 )
         return func(*args)
 

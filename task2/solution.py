@@ -33,5 +33,5 @@ def get_animals_by_letter():
             writer.writerow([letter, count])
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     get_animals_by_letter()

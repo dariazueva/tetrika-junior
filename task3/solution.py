@@ -112,7 +112,7 @@ tests = [
     },
 ]
 
-if __name__ == "main":
+if __name__ == "__main__":
     for i, test in enumerate(tests):
         test_answer = appearance(test["intervals"])
         assert (
