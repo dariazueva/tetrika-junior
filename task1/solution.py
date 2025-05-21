@@ -29,3 +29,7 @@ class StrictTestCase(unittest.TestCase):
     def test_strict_invalid(self):
         with self.assertRaises(TypeError):
             sum_two(1, 2.5)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
